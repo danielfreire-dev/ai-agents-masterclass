@@ -17,7 +17,7 @@ def execute_sql_script(cursor, script_file):
     # Opens the .sql file given as script_file
     with open(script_file, 'r') as sql_file:
         sql_script = sql_file.read()
-    
+
     # Gets all the sql commands and executes them one at a time
     statements = sql_script.split(';')
     for statement in statements:
